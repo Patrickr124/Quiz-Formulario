@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Quiz de Perguntas</h1>
+
+    <form id="meuFormulario" action="" method="post">
+      <label for="pergunta1">Como vc se chama?</label>
+      <input
+        type="text"
+        id="pergunta1"
+        name="nome"
+        required
+        placeholder="Patrick"
+      />
+      <label for="pergunta2">Quantos vc tem?</label>
+      <input
+        type="number"
+        id="pergunta2"
+        name="idade"
+        required
+        min="7"
+        max="100"
+      />
+      <p>Qual é a categoria que vc mais gosta?</p>
+      <label for="categoria1">Filmes</label>
+      <input type="radio" id="categoria1" name="categoria" value="Filmes" />
+      <label for="categoria12">Séries</label>
+      <input type="radio" id="categoria2" name="categoria" value="Séries" />
+      <label for="radio" id="categoria3">Animes</label>
+      <input type="radio" id="categoria3" name="categoria" value="Animes" />
+      <p>Qual é a sua IDE favorita?</p>
+      <label for="ide1">Visual Studio Code</label>
+      <input
+        type="checkbox"
+        id="ide1"
+        name="ide_favorita"
+        value="Visual Studio Code"
+      />
+
+      <label for="ide2">IntelliJ IDEA</label>
+      <input
+        type="checkbox"
+        id="ide2"
+        name="ide_favorita"
+        value="IntelliJ IDEA"
+      />
+
+      <label for="ide3">Eclipse</label>
+      <input type="checkbox" id="ide3" name="ide_favorita" value="Eclipse" />
+      <br /><br /><button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
